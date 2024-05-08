@@ -1,0 +1,28 @@
+body{
+    font-family: Carolignian, fantasy;
+    margin: 30;
+    padding: 0;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 5px;
+    border: solid black 1px;
+    border-radius: 15%;
+    color: green;
+    background: orange;
+    text-align: center;
+}
+
+nav a:focus{
+    background: white
+}
+
+header h1 {
+    background-color: green;
+    color: orange;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
