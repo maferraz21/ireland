@@ -2,27 +2,97 @@ body{
     font-family: Carolignian, fantasy;
     margin: 30;
     padding: 0;
+    background-color: lightgoldenrodyellow;
+    color: black;
 }
 
+nav{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 nav a{
     text-decoration: none;
     padding: 5px;
-    border: solid black 1px;
+    border: solid green .5px;
     border-radius: 15%;
-    color: green;
-    background: orange;
+    color: orange;
     text-align: center;
 }
 
 nav a:focus{
-    background: white
+    background: black
 }
 
 header h1 {
-    background-color: green;
-    color: orange;
+    color: green;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
 }
+
+#skip:focus{
+    left: 100px;
+    padding: 5px;
+    border: 2px;
+    transition: 1s;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#skip{
+    position: relative;
+    left: -500px;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+      		scroll-behavior: auto; /* Disable smooth scrolling */
+    }
+
+    *{
+        	transition: 0s !important;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    nav {
+        background: green;
+        border: solid 6px green;
+
+       }
+        nav a {
+               color: #fff;
+    }
+}
+
+.image-grid {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.image-grid img {
+    border-radius: 49% 51% 50% 50% / 100% 100% 0% 0% ;
+    border-color: orange;
+    background-size: contain;
+    border: solid 2px orange;
+    width: 50%;
+}
+
+@media screen and (min-width: 760px) {
+  .image-grid {
+    grid-template-columns: 45% 45%;
+    grid-gap: 20px;
+  }
+}
+
+
 
