@@ -75,23 +75,28 @@ html{
     display: grid;
     width: 100%;
     gap: 20px;
-    grid-template-columns: 1fr;
     justify-content: center;
 }
 
 .image-grid img {
-    border-radius: 100% 100% 100% 100% / 100% 100% 100% 100% ;
     border-color: orange;
     background-size: contain;
-    border: solid 2px orange;
+    border: solid 2px white;
     width: 50%;
+    border-radius: 100px;
 }
 
 @media screen and (min-width: 760px) {
   .image-grid {
-    grid-template-columns: 45% 45%;
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: auto;
   }
 }
 
+video {
+    width: 50;
+    margin: 5;
+    border: 5px solid black;
+    display: block;
+}
 
