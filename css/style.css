@@ -1,9 +1,10 @@
 body{
-    font-family: Carolignian, fantasy;
+    font-family: Georgia, 'Times New Roman', Times, serif, fantasy;
     margin: 30;
     padding: 0;
-    background-color: lightgoldenrodyellow;
+    background-color: white;
     color: black;
+    margin: 15px;
 }
 
 nav{
@@ -14,11 +15,12 @@ nav{
     margin-bottom: auto;
 }
 nav a{
-    text-decoration: none;
-    padding: 5px;
-    border: solid green .5px;
+    text-size-adjust: 100%;
+    padding: 20px;
+    border: solid orange 1px;
+    color-scheme: dark;
     border-radius: 15%;
-    color: orange;
+    color: black;
     text-align: center;
 }
 
