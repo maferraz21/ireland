@@ -7,7 +7,7 @@ body{
 }
 
 nav{
-    width: 50%;
+    width: auto;
     margin: auto;
     text-align: center;
     margin-top: auto;
@@ -80,7 +80,7 @@ html{
 }
 
 .image-grid img {
-    border-radius: 49% 51% 50% 50% / 100% 100% 0% 0% ;
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 100% ;
     border-color: orange;
     background-size: contain;
     border: solid 2px orange;
@@ -93,6 +93,5 @@ html{
     grid-gap: 20px;
   }
 }
-
 
 
