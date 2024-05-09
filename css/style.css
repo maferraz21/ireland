@@ -13,11 +13,12 @@ nav{
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
+    border: solid orange 1px;
+    border-style: groove;
 }
 nav a{
     text-size-adjust: 100%;
     padding: 20px;
-    border: solid orange 1px;
     color-scheme: dark;
     border-radius: 15%;
     color: black;
@@ -101,4 +102,3 @@ video {
     border: 5px solid black;
     display: block;
 }
-
