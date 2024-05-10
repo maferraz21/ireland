@@ -8,19 +8,21 @@ body {
 
 nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap to the nearest item in the horizontal axis */
 }
 
 nav a {
-    font-size: 16px; /* Adjusted font size for better readability on mobile */
-    padding: 10px 20px; /* Reduced padding for better spacing on mobile */
+    font-size: 16px;
+    padding: 10px 20px;
     background-color: darkorange;
     border: 1px solid orange;
-    border-radius: 8px; /* Reduced border radius for a more modern look */
+    border-radius: 8px;
     color: black;
     text-align: center;
-    margin: 5px; /* Adjusted margin for better spacing on mobile */
+    margin-right: 5px; /* Add some space between items */
+    scroll-snap-align: start; /* Ensure each item snaps to the start of the scroll container */
 }
 
 nav a:focus {
@@ -45,7 +47,7 @@ header h1 {
 }
 
 .current {
-    font-size: 22px; /* Adjusted font size for the current page link */
+    font-size: 22px;
     font-weight: bold;
     border-radius: 2px solid orange;
     position: relative;
