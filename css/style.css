@@ -1,26 +1,30 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif; /* Removed fantasy */
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 15px;
     padding: 0;
     background-color: white;
     color: black;
 }
 
-nav a {
-    font-size: 100%; /* Corrected from text-size-adjust */
-    padding: 20px;
-    background-color: darkorange; /* Example of directly setting a background color */
-    margin-top: auto;
-    margin-bottom: auto;
-    border: 1px solid orange;
-    border-style: groove;
-    border-radius: 15%;
-    color: black;
-    text-align: center;
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-nav a:focus{
-    background: black
+nav a {
+    font-size: 16px; /* Adjusted font size for better readability on mobile */
+    padding: 10px 20px; /* Reduced padding for better spacing on mobile */
+    background-color: darkorange;
+    border: 1px solid orange;
+    border-radius: 8px; /* Reduced border radius for a more modern look */
+    color: black;
+    text-align: center;
+    margin: 5px; /* Adjusted margin for better spacing on mobile */
+}
+
+nav a:focus {
+    background: black;
 }
 
 header h1 {
@@ -30,97 +34,24 @@ header h1 {
     text-align: center;
 }
 
-#skip:focus{
-    left: 100px;
-    padding: 5px;
-    border: 2px;
-    transition: 1s;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-#skip{
-    position: relative;
-    left: -500px;
-}
-
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-      		scroll-behavior: auto; /* Disable smooth scrolling */
-    }
-
-    *{
-        	transition: 0s !important;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     nav {
         background: green;
         border: solid 6px green;
-
-       }
-        nav a {
-               color: #fff;
+    }
+    nav a {
+        color: #fff;
     }
 }
 
-.image-grid {
-    display: grid;
-    width: 100%;
-    gap: 20px;
-    justify-content: center;
-}
-
-.image-grid img {
-    border-color: orange;
-    background-size: contain;
-    border: solid 2px white;
-    width: 50%;
-    border-radius: 100px;
+.current {
+    font-size: 22px; /* Adjusted font size for the current page link */
+    font-weight: bold;
+    border-radius: 2px solid orange;
     position: relative;
 }
 
-@media screen and (min-width: 760px) {
-  .image-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: auto;
-  }
-}
-
-video {
-    width: 50;
-    margin: 5;
-    border: 5px solid black;
-    display: block;
-}
-
-.image-grid img:hover:after {
-    content: attr(data-title);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    background-color: #333;
-    color: #fff;
-    padding: 4px 8px;
-    border-radius: 4px;
-    display: none;
-    z-index: 10;
-    display: block;
-}
-
-
-.current {
-    font-size: 28px;
-    font-weight: bold;
-    border-radius:  2px solid orange;
-}
-
 .current::before {
-    content: "\2667"
+    content: "\2667";
+    margin-right: 5px;
 }
