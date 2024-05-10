@@ -11,15 +11,15 @@ nav{
     width: auto;
     margin: auto;
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    border: solid orange 1px;
-    border-style: groove;
 }
 nav a{
     text-size-adjust: 100%;
     padding: 20px;
     color-scheme: dark;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: solid orange 1px;
+    border-style: groove;
     border-radius: 15%;
     color: black;
     text-align: center;
