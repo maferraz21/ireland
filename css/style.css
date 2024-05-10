@@ -118,7 +118,7 @@ video {
 .current {
     font-size: 28px;
     font-weight: bold;
-    border-top:  2px solid darkorange;
+    border-radius:  2px solid orange;
 }
 
 .current::before {
