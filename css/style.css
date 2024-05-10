@@ -1,24 +1,18 @@
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif, fantasy;
-    margin: 30;
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Removed fantasy */
+    margin: 15px;
     padding: 0;
     background-color: white;
     color: black;
-    margin: 15px;
 }
 
-nav{
-    width: auto;
-    margin: auto;
-    text-align: center;
-}
-nav a{
-    text-size-adjust: 100%;
+nav a {
+    font-size: 100%; /* Corrected from text-size-adjust */
     padding: 20px;
-    color-scheme: dark;
+    background-color: darkorange; /* Example of directly setting a background color */
     margin-top: auto;
     margin-bottom: auto;
-    border: solid orange 1px;
+    border: 1px solid orange;
     border-style: groove;
     border-radius: 15%;
     color: black;
@@ -87,6 +81,7 @@ html{
     border: solid 2px white;
     width: 50%;
     border-radius: 100px;
+    position: relative;
 }
 
 @media screen and (min-width: 760px) {
@@ -102,3 +97,26 @@ video {
     border: 5px solid black;
     display: block;
 }
+
+.image-grid img:hover:after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background-color: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: none;
+    z-index: 10;
+    display: block;
+}
+
+
+.current {
+    font-size: 28px;
+    border-top:  2px solid darkorange;
+}
+
