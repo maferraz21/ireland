@@ -57,3 +57,13 @@ header h1 {
     content: "\2667";
     margin-right: 5px;
 }
+
+.image-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.image-grid {
+    display: inline-block;
+}
