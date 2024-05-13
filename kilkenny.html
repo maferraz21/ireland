@@ -7,30 +7,70 @@
     <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
     <title>Exploring Ireland: A Study Abroad Journey</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .image-grid {
+            overflow-x: scroll;
+            white-space: nowrap;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+            height: 250px; /* Set a fixed height for the container */
+        }
+
+        .image-grid img {
+            margin-right: 10px;
+            cursor: pointer;
+            max-height: 100%; /* Ensure images fit within the container */
+        }
+    </style>
 </head>
 <body>
 
-<a href = "#main">Skip to Main Content</a>
+<a href="#main">Skip to Main Content</a>
 
 <header>
     <h1>Exploring Ireland: A Study Abroad Journey</h1>
     <nav>
         <a href="index.html">About Us</a>
         <a href="dublin.html">Dublin</a>
-        <a href="kilkenny.html" class = "current">Kilkenny</a>
+        <a href="kilkenny.html" class="current" >Kilkenny</a>
         <a href="galway.html">Galway</a>
         <a href="cliffs.html">Cliffs of Moher</a>
-        <a href="blog.html" >Blog</a>
-        <a href="gallery.html" >Gallery</a>
+        <a href="glendalough.html">Glendalough</a>
+        <a href="blog.html">Blog</a>
+        <a href="gallery.html">Gallery</a>
     </nav>
 </header>
 
 <main id="main">
     <h1>Kilkenny</h1>
-    <div class="image-grid">
-        <img src="Images/kilkenny.jpg" alt="Kilkenny" width="200" tabindex="0">
+    <div class="image-grid" id="imageGrid">
+        <!-- Images will be added here -->
     </div>
 </main>
+
+<script>
+    const imageGrid = document.getElementById('imageGrid');
+
+    // Number of Glendalough images
+    const numOfImages = 12;
+
+    // Generate and add Kilkenny images to the image grid
+    for (let i = 1; i <= numOfImages; i++) {
+        const img = document.createElement('img');
+        img.src = `Images/Kilkenny/Kilkenny${i}.jpeg`;
+        img.alt = `Kilkenny${i}`;
+        img.tabIndex = 0;
+        imageGrid.appendChild(img);
+    }
+</script>
+
+<p> Swipe through these images to see my experience in Kilkenny! </p>
+    
+<p> During our journey, we immersed ourselves in the medieval marvel that is Kilkenny. From its iconic castle to its awe-inspiring cathedrals and labyrinthine streets, every corner of this historic city whispered tales of a bygone era. Kilkenny's rich history and charming atmosphere made it an unforgettable highlight of my Ireland trip!</p>
+
+<p>For more information about Kilkenny and its attractions, you can visit their website: <a href="https://visitkilkenny.ie/"> Visit Kilkenny</a>.</p>
 
 </body>
 </html>
