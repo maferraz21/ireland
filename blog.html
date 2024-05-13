@@ -85,7 +85,7 @@
     </article>    
 
     <article>
-        <h2>Exploring Dublin: St Stephen's Green Park and Ulysses Rare Books </h2>
+        <h2> Day 3: St Stephen's Green Park and Ulysses Rare Books </h2>
         <time datetime="2024-05-07">May 8, 2024</time>
         <p>We explored Dublin's beautiful park! Not only does this park have beautiful plants, trees and bodies of water, but it also has the cutest little birds! 
             <div class="image-grid">
@@ -103,12 +103,39 @@
     </article>
 
     <article>
-        <h2>Guest Lecture with Dr David Williams: Gamificaiton, Engagement, and Accessibility </h2>
+        <h2>Day 4: Guest Lecture with Dr David Williams - Gamificaiton, Engagement, and Accessibility </h2>
         <time datetime="2024-05-09">May 9, 2024</time>
         <p> In this lecture, we delved into the captivating realm of gamification, exploring how game elements can transform ordinary tasks into engaging experiences. This transformative process encompasses a myriad of elements including challenges, social interaction, immersion, goal orientation, feedback mechanisms, progression, and playfulness. The discussion extended to the frameworks of MDA (Mechanics, Dynamics, Aesthetics) and MDAO (Mechanics, Dynamics, Aesthetics, and Outcomes), highlighting the dynamic nature of user behavior and the unforeseen outcomes that often arise. Finding the delicate balance between providing autonomy and maintaining control emerged as a central challenge in designing gamified experiences. Games are meticulously crafted to captivate and immerse players in rich environments, a feat not easily replicated in educational settings. However, our lecturer emphasized that understanding user behavior and needs is key to fostering engagement. Through meticulous analysis and mapping of mechanisms, he outlined strategies for applying gamification principles to learning environments. The concept of engagement was dissected, revealing its multifaceted nature often intertwined with participation, goals, motivation, immersion, drive, and flow. Drawing from research, we explored engagement in technology, defined by a rich array of attributes including challenge, positive affect, aesthetic appeal, attention, interactivity, and perceived user control. One of the pivotal discussions centered around the measurement of engagement, which encompasses dimensions such as skills development, participation and interaction levels, emotional responses, and performance outcomes. Additionally, accessibility emerged as a critical consideration, emphasizing the importance of creating inclusive experiences that accommodate diverse user needs. As we navigate the evolving landscape of gamification and user engagement, these insights serve as guiding beacons, illuminating pathways toward creating more immersive, meaningful, and inclusive experiences for all. </p>
     </article>
 
-    <!-- Add more articles for each blog post -->
+    <article>
+        <h2> Day 5: EPIC Museum </h2>
+        <time datetime="2024-05-10">May 10, 2024</time>
+        <p> In my first Friday in Dublin, I started out the day with class then in the afternoon headed to the EPIC Museum, The Irish Immigration Museum on the North side of the city. This museum had 20 different rooms, each showing a different part of Irish culture: art, music, food, and its history/global connection.  </p>
+        <p>For more information about the EPIC museum, you can visit their website: <a href="https://epicchq.com/?utm_source=adwords&utm_term=epic%20museum&utm_campaign=Google+Search+-+Brand+-+2019&utm_medium=ppc&hsa_tgt=kwd-626796545005&hsa_src=g&hsa_kw=epic%20museum&hsa_ver=3&hsa_mt=p&hsa_cam=12972805156&hsa_ad=532247952191&hsa_grp=121979769756&hsa_net=adwords&hsa_acc=1298776736&gad_source=1&gclid=CjwKCAjw9IayBhBJEiwAVuc3ftKqARUjQvpqzPEywD6vlGxJkuVgx4F7lOKL-G3CbEPaNjGYDgLcmxoClv4QAvD_BwE"> EPIC Museum </a></p>
+        <div class="image-container">
+            <div class="image-grid" id="epic-images">
+                <!-- Images will be added here dynamically -->
+            </div>
+        </div>
+    </article>
+    
+    <script>
+        // Get the image grid container
+        const epicImagesContainer = document.getElementById('epic-images');
+        
+        // Loop to add EPIC images dynamically
+        for (let i = 1; i <= 20; i++) {
+            const img = document.createElement('img');
+            img.src = `Images/EPIC/EPIC${i}.jpeg`;
+            img.alt = `EPIC${i}`;
+            img.width = 200;
+            epicImagesContainer.appendChild(img);
+        }
+    </script>
+    
+    
+
 </main>
 </body>
 </html>
