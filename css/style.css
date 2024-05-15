@@ -38,7 +38,9 @@ nav a {
 }
 
 nav a:focus {
-    background: black;
+    border: green;
+    border-radius: 100; 
+    border-bottom: 100px;
 }
 
 header h1 {
