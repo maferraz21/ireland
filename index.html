@@ -6,6 +6,7 @@
     <!-- https://www.favicon.cc/ -->
     <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
     <title>Exploring Ireland: About </title>
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     
 </head>
@@ -36,13 +37,18 @@
     </section>
 
     <section id="gallery">
-        <h2>Gallery</h2>
+        <h2>Cities</h2>
         <div class="image-grid" tabindex="0">
-            <img src="Images/dublin.webp" alt="Dublin" title="Dublin Stock Photo" width="200" tabindex="0">
-            <img src="Images/Kilkenny/Kilkenny1.jpeg" alt="Kilkenny1" title="Kilkenny Stock Photo" width="200" tabindex="0">
-            <img src="Images/galway.jpg" alt="Galway" title = "Galway Stock Photo" width = "200" tabindex = "0">
-            <img src="Images/cliffs_of_moher.jpg" alt="Cliffs of Moher" title = "Cliffs of Moher Stock Photo" width = "200" tabindex = "0">
-            <img src="Images/ireland_castle.jpg" alt="Castle in Ireland" title = "Castle Stock Photo" width = "200" tabindex = "0">
+            <a href="Images/dublin.webp" data-lightbox="image-1" data-title="The beautiful city of Dublin"><img src="Images/dublin.webp" alt="Typical stock photo of Dublin" title="Dublin Stock Photo" width="200" tabindex="0"></a>
+            
+            <a href="Images/Kilkenny/Kilkenny1.jpeg" data-lightbox="image-1" data-title="The beautiful city of Kilkenny"><img src="Images/Kilkenny/Kilkenny1.jpeg" alt="Typical stock photo of Kilkenny" title="Kilkenny Stock Photo" width="200" tabindex="0"></a>
+
+            <a href="Images/galway.jpg" data-lightbox="image-1" data-title="The beautiful city of Galway"><img src="Images/galway.jpg" alt="Typical stock photo of Galway" title = "Galway Stock Photo" width = "200" tabindex = "0"></a>
+
+            <a href="Images/cliffs_of_moher.jpg" data-lightbox="image-1" data-title="The beautiful Cliffs of Moher"><img src="Images/cliffs_of_moher.jpg" alt="Cliffs of Moher" title = "Cliffs of Moher Stock Photo" width = "200" tabindex = "0"></a>
+
+            <a href="Images/ireland_castle.jpg" data-lightbox="image-1" data-title="The beautiful Castle of Ireland"><img src="Images/ireland_castle.jpg" alt="Castle in Ireland" title = "Castle Stock Photo" width = "200" tabindex = "0"></a>
+
         </div>
     </section>
 </main>
@@ -53,6 +59,8 @@
     <p></p>
     <p></p>
 </footer>
+
+<script src="dist/js/lightbox-plus-jquery.js"></script>
 
 </body>
 </html>
