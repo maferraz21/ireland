@@ -26,19 +26,29 @@
 </header>
 
 <main id="main">
-    <h1>Kilkenny</h1>
-    <div class="image-grid" tabindex="0" id="imageGrid">
-        <!-- Images will be added here -->
-    </div>
+    <section>
+        <h1>Kilkenny</h1>
+        <div class="image-grid" tabindex="0" id="imageGrid">
+            <!-- Images will be added here -->
+        </div>
+
+        <p> Swipe through these images to see my experience in Kilkenny! </p>
+    </section>
+
+    <section>
+        <p>During our journey, we immersed ourselves in the medieval marvel that is Kilkenny. From its iconic castle to its awe-inspiring cathedrals and labyrinthine streets, every corner of this historic city whispered tales of a bygone era. Kilkenny's rich history and charming atmosphere made it an unforgettable highlight of my Ireland trip!</p>
+
+        <p>For more information about Kilkenny and its attractions, you can visit their website: <a href="https://visitkilkenny.ie/"> Visit Kilkenny</a>.</p>
+    </section>
 </main>
 
 <script>
     const imageGrid = document.getElementById('imageGrid');
 
-    // Number of Glendalough images
+    // Number of Kilkenny images
     const numOfImages = 27;
 
-    // Generate and add Glendalough images to the image grid
+    // Generate and add Kilkenny images to the image grid
     for (let i = 1; i <= numOfImages; i++) {
         const img = document.createElement('img');
         img.src = `Images/Kilkenny/Kilkenny${i}.jpeg`;
@@ -48,12 +58,6 @@
         imageGrid.appendChild(img);
     }
 </script>
-
-<p> Swipe through these images to see my experience in Kilkenny! </p>
-    
-<p> During our journey, we immersed ourselves in the medieval marvel that is Kilkenny. From its iconic castle to its awe-inspiring cathedrals and labyrinthine streets, every corner of this historic city whispered tales of a bygone era. Kilkenny's rich history and charming atmosphere made it an unforgettable highlight of my Ireland trip!</p>
-
-<p>For more information about Kilkenny and its attractions, you can visit their website: <a href="https://visitkilkenny.ie/"> Visit Kilkenny</a>.</p>
 
 </body>
 </html>
