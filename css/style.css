@@ -1,3 +1,15 @@
+#skip{
+    position: absolute;
+    left: -500px;
+}
+
+#skip:focus {
+    left: 100px;
+    padding: 5px;
+    border: 2px;
+    transition: 1s;
+    background-color: yellow;
+}
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 15px;
