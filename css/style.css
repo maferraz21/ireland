@@ -75,5 +75,5 @@ header h1 {
 
 .image-grid img {
     margin-right: 10px;
-    cursor: pointer;
+    cursor: url('Images/celtic-knot-cursor.png'), auto;
 }
