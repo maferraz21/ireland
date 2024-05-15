@@ -65,4 +65,15 @@ header h1 {
 
 .image-grid {
     display: inline-block;
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-grid img {
+    margin-right: 10px;
+    cursor: pointer;
 }
