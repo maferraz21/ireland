@@ -56,6 +56,20 @@ header h1 {
 
 h2 {
     color: green;
+    text-shadow: -1px -1px 0 orange,  
+                  1px -1px 0 orange,
+                 -1px  1px 0 orange,
+                  1px  1px 0 orange;
+}
+
+h3 {
+    color: green;
+    font-weight: bold;
+}
+
+time {
+    color: black;
+    text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -130,4 +144,12 @@ h2 {
     .gallery-image-grid {
         grid-template-columns: 1fr 1fr 1fr;
 }
+}
+
+.video {
+  width: 30%;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: block;
 }
