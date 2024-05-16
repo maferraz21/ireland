@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- https://www.favicon.cc/ -->
     <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
-    <title>Exploring Ireland: Glendalough</title>
+    <title>Exploring Ireland: Glendalough </title>
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
 
@@ -20,45 +22,48 @@
         <a href="kilkenny.html">Kilkenny</a>
         <a href="galway.html">Galway</a>
         <a href="cliffs.html">Cliffs of Moher</a>
-        <a href="glendalough.html" class="current">Glendalough</a>
+        <a href="glendalough.html" class = "current">Glendalough</a>
         <a href="blog.html">Blog</a>
         <a href="gallery.html">Gallery</a>
     </nav>
 </header>
 
-<main id="main">
-    <section>
+<main id = "main">
+    <!-- <h2>Failte go Baile Atha Cliath!</h2> -->
+    <section id="about">
         <h2>Glendalough</h2>
-        <div class="image-grid" tabindex="0" id="imageGrid">
-            <!-- Images will be added here -->
-        </div>
-
-        <p> Swipe through these images to see my experience in Glendalough! </p>
-    </section>
-
-    <section>
+        <!-- <img src="images/me.jpg" alt=""> -->
         <p>We explored the ancient monastic site and took in the stunning natural beauty of the valley and lakes. It was truly a magical place.</p>
 
         <p>For more information about Glendalough and its attractions, you can visit their website: <a href="https://glendalough.ie/"> Visit Glendalough</a>.</p>
+      </section>
+
+    <section id="gallery">
+        <h3> The Glendalough Monastic Site </h3>
+        <div class="image-grid" tabindex="0">
+            <a href="Images/Glendalough/Glendalough1.jpeg" data-lightbox="image1" data-title="The Glendalough monastic site entrance."><img src="Images/Glendalough/Glendalough1.jpeg" alt="Entrance of the Glendalough monastic site with trees in the back." title="Glendalough Photo 1" width="200" tabindex="0"></a>
+            <a href="Images/Glendalough/Glendalough2.jpeg" data-lightbox="image2" data-title="The round tower of the Glendalough monastic site."><img src="Images/Glendalough/Glendalough2.jpeg" alt="The priest's house in the Glendalough monastic site with trees in the back." title="Glendalough Photo 2" width="200" tabindex="0"></a>
+            <a href="Images/Glendalough/Glendalough15.jpeg" data-lightbox="image3" data-title="The 'Priest's House' in the Glendalough monastic site."><img src="Images/Glendalough/Glendalough15.jpeg" alt="The round tower in the Glendalough monastic site." title="Glendalough Photo 3" width="200" tabindex="0"></a>
+            <a href="Images/Glendalough/Glendalough11.jpeg" data-lightbox="image4" data-title="Part of the medieval stone churches in the Glendalough monastic site."><img src="Images/Glendalough/Glendalough11.jpeg" alt="Part of the medieval stone churches in the Glendalough monastic site." title="Glendalough Photo 4" width="200" tabindex="0"></a>
+            <a href="Images/Glendalough/Glendalough5.jpeg" data-lightbox="image5" data-title="Walking through the tombstones in the Glendalough monastic site."><img src="Images/Glendalough/Glendalough5.jpeg" alt="Walking through the tombstones in the Glendalough monastic site." title="Glendalough Photo 5" width="200" tabindex="0"></a>
+        </div>
+        <h3> The Glendalough Lower Lake </h3>
+        <div class="image-grid" tabindex="0">
+            <a href="Images/Glendalough/Glendalough7.jpeg" data-lightbox="image6" data-title="The Glendalough lower lake."><img src="Images/Glendalough/Glendalough7.jpeg" alt="The Glendalough lower lake." title="Glendalough Photo 6" width="200" tabindex="0"></a>
+            <a href="Images/Glendalough/Glendalough4.jpeg" data-lightbox="image7" data-title="Me, Mariana, in the Glendalough lower lake."><img src="Images/Glendalough/Glendalough4.jpeg" alt="Me, Mariana, in the Glendalough lower lake." title="Glendalough Photo 7" width="200" tabindex="0"></a>
+            <a href="Images/Glendalough/Glendalough12.jpeg" data-lightbox="image8" data-title="A local couple relaxing by the Glendalough lower lake."><img src="Images/Glendalough/Glendalough12.jpeg" alt="A local couple relaxing by the Glendalough lower lake." title="Glendalough Photo 8" width="200" tabindex="0"></a>
+        </div>
     </section>
 </main>
+<footer>
+    <p>&copy; 2024 Exploring Ireland: A Study Abroad Journey</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</footer>
 
-<script>
-    const imageGrid = document.getElementById('imageGrid');
-
-    // Number of Glendalough images
-    const numOfImages = 27;
-
-    // Generate and add Glendalough images to the image grid
-    for (let i = 1; i <= numOfImages; i++) {
-        const img = document.createElement('img');
-        img.src = `Images/Glendalough/Glendalough${i}.jpeg`;
-        img.alt = `Glendalough${i}`;
-        img.width = 200;
-        img.tabIndex = 0;
-        imageGrid.appendChild(img);
-    }
-</script>
+<script src="dist/js/lightbox-plus-jquery.js"></script>
 
 </body>
 </html>

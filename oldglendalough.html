@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- https://www.favicon.cc/ -->
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
+    <title>Exploring Ireland: Glendalough</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href = "#main" id = "skip">Skip to Main Content</a>
+
+<header>
+    <h1>Exploring Ireland: A Study Abroad Journey</h1>
+    <nav>
+        <a href="index.html">About</a>
+        <a href="dublin.html">Dublin</a>
+        <a href="kilkenny.html">Kilkenny</a>
+        <a href="galway.html">Galway</a>
+        <a href="cliffs.html">Cliffs of Moher</a>
+        <a href="glendalough.html" class="current">Glendalough</a>
+        <a href="blog.html">Blog</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+</header>
+
+<main id="main">
+    <section>
+        <h2>Glendalough</h2>
+        <div class="image-grid" tabindex="0" id="imageGrid">
+            <!-- Images will be added here -->
+        </div>
+
+        <p> Swipe through these images to see my experience in Glendalough! </p>
+    </section>
+
+    <section>
+        <p>We explored the ancient monastic site and took in the stunning natural beauty of the valley and lakes. It was truly a magical place.</p>
+
+        <p>For more information about Glendalough and its attractions, you can visit their website: <a href="https://glendalough.ie/"> Visit Glendalough</a>.</p>
+    </section>
+</main>
+
+<script>
+    const imageGrid = document.getElementById('imageGrid');
+
+    // Number of Glendalough images
+    const numOfImages = 27;
+
+    // Generate and add Glendalough images to the image grid
+    for (let i = 1; i <= numOfImages; i++) {
+        const img = document.createElement('img');
+        img.src = `Images/Glendalough/Glendalough${i}.jpeg`;
+        img.alt = `Glendalough${i}`;
+        img.width = 200;
+        img.tabIndex = 0;
+        imageGrid.appendChild(img);
+    }
+</script>
+
+</body>
+</html>
