@@ -63,17 +63,19 @@ h2 {
 }
 
 h3 {
-    color: green;
-    font-weight: bold;
-}
-
-h4 {
+    color: darkgreen;
     text-size-adjust: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-style: italic;
     text-decoration: underline;
+}
+
+h4 {
+    color: black;
+    font-weight: bold;
+    text-size-adjust: 200;
 }
 
 time {
