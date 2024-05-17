@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
     <title>Exploring Ireland: Gallery </title>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
@@ -29,16 +30,27 @@
 
 <main id="main">
     <h2>Gallery</h2>
+    <button type="button" data-filter="all">All</button>
+    <button type="button" data-filter=".category-Dublin">Dublin</button>
+    <button type="button" data-filter=".category-Kilkenny">Kilkenny</button>
+    <button type="button" data-filter=".category-Galway">Galway</button>
+    <button type="button" data-filter=".category-Cliffs">Cliffs of Moher</button>
+    
     <div class="gallery-image-grid" tabindex="0">
-        <img src="Images/dublin.webp" alt="Dublin" width="200" tabindex="0">
-        <img src="Images/Kilkenny/Kilkenny1.jpeg" alt="Kilkenny" width="200" tabindex="0">
-        <img src="Images/galway.jpg" alt="Galway" width="200" tabindex="0">
-        <img src="Images/cliffs_of_moher.jpg" alt="Cliffs of Moher" width="200" tabindex="0">
-        <img src="Images/ireland_castle.jpg" alt="Castle in Ireland" width="200" tabindex="0">
-        <img src="Images/Brazen Head 1.jpeg" alt="Brazen Head 1" width="200" tabindex="0">
-        <!-- Add more images here -->
+        <div class="container">
+            <div class="mix category-Dublin" data-order="1"><img src="Images/dublin.webp" alt="Dublin" width="200" tabindex="0"></div>
+            <div class="mix category-Kilkenny" data-order="2"> <img src="Images/Kilkenny/Kilkenny1.jpeg" alt="Kilkenny" width="200" tabindex="0"></div>
+            <div class="mix category-Galway" data-order="3"> <img src="Images/galway.jpg" alt="Galway" width="200" tabindex="0"> </div>
+            <div class="mix category-Cliffs" data-order="4"> <img src="Images/cliffs_of_moher.jpg" alt="Cliffs of Moher" width="200" tabindex="0"> </div>
+        </div>
     </div>
 </main>
 
+<script src="dist2/mixitup.js" ></script>
+
+<script>
+    var containerE1 = document.querySelector('.container');
+    var mixer = mixitup(containerE1);
+</script>
 </body>
 </html>
