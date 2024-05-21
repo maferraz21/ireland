@@ -6,7 +6,9 @@
     <!-- https://www.favicon.cc/ -->
     <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
     <title>Exploring Ireland: Cliffs of Moher </title>
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
 
@@ -21,18 +23,44 @@
         <a href="galway.html">Galway</a>
         <a href="cliffs.html" class = "current">Cliffs of Moher</a>
         <a href="glendalough.html">Glendalough</a>
-        <a href="belfast.html">Belfast</a>
-        <a href="blog.html" >Blog</a>
-        <a href="gallery.html" >Gallery</a>
+        <a href="belfast.html">Belfast</a>        
+        <a href="blog.html">Blog</a>
+        <a href="gallery.html">Gallery</a>
     </nav>
 </header>
 
-<main id="main">
-    <h2>Cliffs of Moher</h2>
-    <div class="image-grid" tabindex="0">
-        <img src="Images/cliffs_of_moher.jpg" alt="cliffs_of_moher" width="200" tabindex="0">
-    </div>
+<main id = "main">
+    <section>
+        <h2>Cliffs of Moher</h2>
+        
+        <p>
+            I loved exploring the Cliffs of Moher!
+            The views were absolutely breathtaking, with the dramatic cliffs plunging into the crashing waves below. 
+            I wondered along the trails, taking in the stunning vistas.
+            The Cliffs of Moher are truly a must-see destination for anyone visiting Ireland.
+            The sheer scale and dramatic beauty of the cliffs is both terrifying and wonderful.
+            The Cliffs of Moher are a true natural wonder and a highlight of my time in Ireland.
+        </p>
+        </section>
+    
+    <section id="gallery">
+        <div class="image-grid" tabindex="0">
+            <a href="Images/cliffs1.jpeg" data-lightbox="image-1" data-title="Panoramic view of the Cliffs of Moher."><img src="Images/cliffs1.jpeg" alt="Panoramic view of the Cliffs of Moher." title="Panoramic view of the Cliffs of Moher." width="200" tabindex="0"></a>
+            <a href="Images/cliffs2.jpeg" data-lightbox="image-1" data-title="Me, Mariana and the panoramic view of the Cliffs of Moher."><img src="Images/cliffs2.jpeg" alt="Me, Mariana and the panoramic view of the Cliffs of Moher." title="Me, Mariana and the panoramic view of the Cliffs of Moher." width="200" tabindex="0"></a>
+            <a href="Images/cliffs3.jpeg" data-lightbox="image-1" data-title="My friends going down the hill in the Cliffs of Moher."><img src="Images/cliffs3.jpeg" alt="My friends going down the hill in the Cliffs of Moher." title="My friends going down the hill in the Cliffs of Moher." width="200" tabindex="0"></a>
+        </div>
+    </section>
+
 </main>
+<footer>
+    <p>&copy; 2024 Exploring Ireland: A Study Abroad Journey</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</footer>
+
+<script src="dist/js/lightbox-plus-jquery.js"></script>
 
 </body>
 </html>
