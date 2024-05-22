@@ -6,7 +6,9 @@
     <!-- https://www.favicon.cc/ -->
     <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
     <title>Exploring Ireland: Dublin </title>
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
 
@@ -21,18 +23,82 @@
         <a href="galway.html">Galway</a>
         <a href="cliffs.html">Cliffs of Moher</a>
         <a href="glendalough.html">Glendalough</a>
-        <a href="belfast.html">Belfast</a>
-        <a href="blog.html" >Blog</a>
-        <a href="gallery.html" >Gallery</a>
+        <a href="belfast.html">Belfast</a>        
+        <a href="blog.html">Blog</a>
+        <a href="gallery.html">Gallery</a>
     </nav>
 </header>
 
-<main id="main">
-    <h2>Dublin</h2>
-    <div class="image-grid" tabindex="0">
-        <img src="Images/dublin.webp" alt="Dublin" width="200" tabindex="0">
-    </div>
+<main id = "main">
+    <section>
+        <h2>Dublin</h2>
+        
+        <p>
+            During our time in Dublin, we explored many of the city's top attractions. 
+            As all of these activities are detaidly explained on my blog posts, for this page, I chose my favorite Dublin adventures: the museums.
+            I loved learning about Irish history and culture at the National Museum of Ireland, Natural History Museum, and the Epic Museum.            
+            Dublin's lively atmosphere and rich history came alive as we learned about the city and its people. 
+        </p>
+        </p>
+        </section>
+    
+        <h3> EPIC Museum </h3>
+        <p> In my first Friday in Dublin, I started out the day with class then in the afternoon headed to the EPIC Museum, The Irish Immigration Museum on the North side of the city. This museum had 20 different rooms, each showing a different part of Irish culture: art, music, food, and its history/global connection.  </p>
+        <p>For more information about the EPIC museum, you can visit their website: <a href="https://epicchq.com/?utm_source=adwords&utm_term=epic%20museum&utm_campaign=Google+Search+-+Brand+-+2019&utm_medium=ppc&hsa_tgt=kwd-626796545005&hsa_src=g&hsa_kw=epic%20museum&hsa_ver=3&hsa_mt=p&hsa_cam=12972805156&hsa_ad=532247952191&hsa_grp=121979769756&hsa_net=adwords&hsa_acc=1298776736&gad_source=1&gclid=CjwKCAjw9IayBhBJEiwAVuc3ftKqARUjQvpqzPEywD6vlGxJkuVgx4F7lOKL-G3CbEPaNjGYDgLcmxoClv4QAvD_BwE"> EPIC Museum </a></p>
+        <div class="image-grid" tabindex="0" id="epic-images"> </div>
+        <script>
+            // Get the image grid container
+            const epicImagesContainer = document.getElementById('epic-images');
+            
+            // Loop to add EPIC images dynamically
+            for (let i = 1; i <= 20; i++) {
+                const img = document.createElement('img');
+                img.src = `Images/EPIC/EPIC${i}.jpeg`;
+                img.alt = `EPIC${i}`;
+                img.width = 200;
+                epicImagesContainer.appendChild(img);
+            }
+        </script>
+
+        <h3> Natural History Museum </h3>
+        <p> Despite the somber nature of the Natural History Museum's exhibits, I found it to be an enlightening experience. The museum's extensive array of preserved wildlife specimens, spanning mammals, birds, and insects, offered a captivating window into Ireland's diverse ecosystems. </p>
+        <p> A standout moment for me was observing the seals, particularly the common and grey varieties, which I had never encountered in person before. Their proximity allowed me to appreciate their unique beauty in a way I likely won't have the chance to again, and I couldn't help but find them irresistibly charming. While familiar animals like bunnies, deer, and birds didn't hold the same novelty, I still appreciated the opportunity to observe them in such detail. </p>
+        <p> Additionally, encountering the imposing presence of a shark suspended above added an extra layer of intrigue to the experience. Overall, delving into the history and evolution of these creatures proved both enriching and thought-provoking. </p>
+        <div class="image-grid" tabindex="0">
+            <img src="Images/Museums/NH1.jpeg" alt="The outside of the Natural History Museum in Dublin." width = "200">
+            <img src="Images/Museums/NH2.jpeg" alt="The common and grey seals in the Natural History Museum in Dublin." width = "200">
+            <img src="Images/Museums/NH3.jpeg" alt="The birds and suspended shark in the Natural History Museum in Dublin." width = "200">
+        </div>
+
+        <h3> National Museum of Ireland </h3>
+        <p>
+            The National Museum of Ireland houses an impressive collection of artifacts and exhibits showcasing Ireland's rich cultural heritage.
+            The museum's highlights for me included the stunning silver Chalice, a remarkable example of Celtic metalwork, as well as the intriguing Bog Bodies - remarkably preserved human remains from the Iron Age that provide insights into ancient Irish society.
+            The museum's grand architecture and thoughtful curation made for a truly engaging and educational experience, further deepening my appreciation for Ireland's fascinating history and traditions.
+        </p>
+            <div class="image-grid" tabindex="0">
+                <img src="Images/Museums/national musuem1.jpeg" alt="The inside of the the National Museum of Ireland" width = "200">
+            </div>
+            <h5> The Chalice </h5>
+                <div class="image-grid" tabindex="0">
+                    <img src="Images/Museums/national musuem2.jpeg" alt="The silver chalice in the the National Museum of Ireland" width = "200">
+                </div>
+            <h5> Bog Boddies </h5>
+                <div class="image-grid" tabindex="0">
+                    <img src="Images/Museums/national musuem4.jpeg" alt="Clonycavan Man" width = "200">
+                    <img src="Images/Museums/national musuem6.jpeg" alt="Old Croghan Man" width = "200">
+                    <img src="Images/Museums/national musuem8.jpeg" alt="Gallagh Man" width = "200">
+                </div>
 </main>
+<footer>
+    <p>&copy; 2024 Exploring Ireland: A Study Abroad Journey</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</footer>
+
+<script src="dist/js/lightbox-plus-jquery.js"></script>
 
 </body>
 </html>
