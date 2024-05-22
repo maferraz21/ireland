@@ -158,6 +158,7 @@ time {
     margin: 10px;
 }
 
+
 @media all and (min-width:950px){
     nav{
         justify-content: space-evenly;
